@@ -7,6 +7,15 @@
   html {
     font-size: 16px;
   }
+  #emailModal {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
   body {
     overflow-x: hidden;
   }
