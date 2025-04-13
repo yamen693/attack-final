@@ -1,3 +1,4 @@
+
 * {
   margin: 0px;
   padding: 0px;
@@ -1072,4 +1073,23 @@ input[type=number] {
   color: white;
   font-size: 2rem;
   cursor: pointer;
+}
+.btn-connect {
+  background-color: black; /* Black background color */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 200px; /* Fixed width */
+  margin: 0 auto; /* Center the button horizontally */
+  text-align: center; /* Ensure text is centered */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.btn-connect:hover {
+  background-color: #333; /* Darker black on hover */
 }

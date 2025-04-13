@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Adel;Shawky;;;
+FN:Shawky Adel
+ORG:Attack Football Academy
+TITLE:Founder
+TEL;TYPE=cell:+201234567890
+EMAIL:attackfootballac@gmail.com
+URL:https://attackfootballacademy.com
+ADR;TYPE=work:;;Cairo;;;;
+END:VCARD
