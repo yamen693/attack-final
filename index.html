@@ -23,14 +23,7 @@
     <link rel="icon" type="image/x-icon" href="attack.png">
     
         
-    <script>
-        document.addEventListener('DOMContentLoaded', async function() {
-            const currentUrl = window.location.href;
-            if (currentUrl.includes('download/tap')) {
-                window.location.href = "https://get-tap.app/tapdownload";
-            }
-        });
-    </script>
+ 
 </head>
 <body>
     
@@ -74,11 +67,9 @@
     
                                         
                 </div>
-                <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AAdel%3BShawky%3B%3B%3B%0AFN%3AShawky%20Adel%0AORG%3AAttack%20Football%20Academy%0ATITLE%3AFounder%0ATEL%3BTYPE%3Dcell%3A%2B201234567890%0AEMAIL%3Aattackfootballac%40gmail.com%0AURL%3Ahttps%3A%2F%2Fattackfootballacademy.com%0AADR%3BTYPE%3Dwork%3A%3B%3BCairo%3B%3B%3B%3B%0AEND%3AVCARD" download="AttackAcademy.vcf">
-                    <button class="btn-connect">
-                        Connect with us by 📇
-                    </button>
-                </a>
+          <a id="vcard-link" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AAdel%3BShawky%3B%3B%3B%0AFN%3AShawky%20Adel%0AORG%3AAttack%20Football%20Academy%0ATITLE%3AFounder%0ATEL%3BTYPE%3Dcell%3A%2B201234567890%0AEMAIL%3Aattackfootballac%40gmail.com%0AURL%3Ahttps%3A%2F%2Fattackfootballacademy.com%0AADR%3BTYPE%3Dwork%3A%3B%3BCairo%3B%3B%3B%3B%0AEND%3AVCARD" download="AttackAcademy.vcf">
+            <button class="connect-btn" id="connectButton" onclick="changeButton()">Connect with Us</button>
+</a> 
                     
                 <div id="video-link" class="video-link"></div>
 
@@ -129,6 +120,7 @@
                 <img src="https://cdn.gettap.co/uploads/link_type/s3_image/23/maps.png" alt="Link">
                 <span>Address</span>
             </a>
+            <h3>made with ❤️ by yamen hossam</h3>
             </div>
                 </div>
 
@@ -216,6 +208,20 @@
         document.getElementById("save-contact").addEventListener("click", function () {
             window.location.href = vcardUrl;
           });
+          function changeButton() {
+            const button = document.getElementById("connectButton");
+            // Change button text and color after click
+            button.textContent = "Done ✅";
+            button.classList.add("done-btn");
+
+            // Revert to original after 3 seconds
+            setTimeout(function() {
+                button.textContent = "Connect with Us";
+                button.classList.remove("done-btn");
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }
     </script>
 
-<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span> <h4 style="margin-bottom: 3px;">By Yamen hossam</h4></body></html> 
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span> 
+</body>
+</html> 
